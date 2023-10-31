@@ -1,2 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Static_enum;
+
+Ismlar name = Ismlar.Saida;
+int age = (int)Ismlar.Saida;
+
+Console.WriteLine($"{name}ning yoshi {age}da");
