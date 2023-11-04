@@ -13,10 +13,10 @@ namespace Static_enum
             BirdInformation birdInformation = new BirdInformation();
             if (birdInformation.canFly == true)
             {
-                return true;
+                return false;
 
             }
-            return false;
+            return true;
         }
 
         public static void SetBirdInformation()
@@ -30,6 +30,8 @@ namespace Static_enum
             birdInformation.description = Console.ReadLine();
             Console.Write("type: ");
             birdInformation.type = Console.ReadLine();
+            Console.Write("canFly: ");
+            birdInformation.canFly = Convert.ToBoolean(Console.ReadLine());
 
         }
     }
